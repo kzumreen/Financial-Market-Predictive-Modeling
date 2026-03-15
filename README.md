@@ -23,12 +23,20 @@ This project identifies the key drivers of Citigroup's daily stock price movemen
 
 The analysis followed a structured, multi-stage variable selection process to move from 74 raw predictors down to a final interpretable model.
 
-![Sector Trend Plots](images/sector_trends.png)
-*Daily price trends grouped by sector — Investment Banking, Diversified Banks, Consumer Finance, Asset Management, Financial Exchange & Data, and Insurance*
+**Investment Banking** (GS, IBKR, MS, HOOD)
+![Investment Banking Trends](Visuals/investment_banking_cp.png)
 
-The sector grouping step was critical: it revealed that insurance stocks diverge from Citigroup's trend despite having moderate correlation, leading to their removal before modeling.
+**Diversified Banks & Consumer Finance** (JPM, BAC, COF, AXP)
+![Banks and Consumer Finance Trends](Visuals/banks_and_consumer_finance_c.png)
 
-![Correlation Heatmap](images/correlation_heatmap.png)
+**Asset Management & Financial Exchange** (BEN, BK, NDAQ, MCO)
+![Asset Management and Exchange Trends](Visuals/asset_managaement_and_excha.png)
+
+**Insurance** (HIG, TRV, WRB, ERIE, GL)
+![Insurance Trends](Visuals/insurance_cp.png)
+*Insurance stocks show divergent trend behavior compared to other sectors — particularly ERIE, which moves inversely to Citigroup. This group was excluded from regression modeling.*
+
+![Correlation Heatmap](Visuals/correlation_map.png)
 *Correlation matrix across 19 selected predictors — strong positive clustering among banking and consumer finance stocks, ERIE showing a clear negative relationship*
 
 ---
@@ -52,10 +60,10 @@ Predicted C = 36.54 + 5.367(BAC) - 0.386(COF) - 3.752(BK) + 0.139(BLK)
 Adj R² = 0.9834 | Root MSE = 1.604 | CV = 2.012%
 ```
 
-![Residual Diagnostics](images/residual_diagnostics.png)
+![Residual Diagnostics](Visuals/residual_diagnostics.png)
 *Residual vs predicted, Q-Q plot, fit-spread plot, and residual distribution — all assumptions reasonably satisfied*
 
-![Interaction Plots](images/interaction_plots.png)
+![Interaction Plots](Visuals/interaction_plots.png)
 *Interaction effect plots showing non-parallel lines across all predictor pairs — confirming the significance of interaction terms*
 
 ---
