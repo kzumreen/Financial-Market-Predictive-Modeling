@@ -27,10 +27,10 @@ The analysis followed a structured, multi-stage variable selection process to mo
 ![Investment Banking Trends](Visuals/investment_banking_cp.png)
 
 **Diversified Banks & Consumer Finance** (JPM, BAC, COF, AXP)
-![Banks and Consumer Finance Trends](Visuals/banks_and_consumer_finance_c.png)
+![Banks and Consumer Finance Trends](Visuals/banks_and_consumer_finance_cp.png)
 
 **Asset Management & Financial Exchange** (BEN, BK, NDAQ, MCO)
-![Asset Management and Exchange Trends](Visuals/asset_managaement_and_excha.png)
+![Asset Management and Exchange Trends](Visuals/asset_managaement_and_exchange_cp.png)
 
 **Insurance** (HIG, TRV, WRB, ERIE, GL)
 ![Insurance Trends](Visuals/insurance_cp.png)
