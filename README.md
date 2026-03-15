@@ -2,7 +2,7 @@
 
 Predictive analysis of Citigroup (C) stock performance using SAS and Python. Built a multi-stage regression model explaining 98.3% of price variance (Adj R² = 0.983), applying Pearson correlation screening, stepwise selection, and VIF diagnostics to resolve multicollinearity. Includes interaction modeling, quadratic terms, and full residual diagnostics.
 
-![Citigroup Price Trend](images/citi_price_trend.png)
+![Citigroup Price Trend](visuals/daily_closing_price.png)
 *Citigroup daily closing price Nov 2024 – Oct 2025 — low of $56.95 in April, recovery to $102.88 by September*
 
 ---
